@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Pentagono">
+
+    <EditText
+        android:id="@+id/editTextLongitudLado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitud del lado"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnCalcularPentagono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_below="@id/editTextLongitudLado"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnLimpiarPentagono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpiar"
+        android:layout_below="@id/btnCalcularPentagono"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewResultadoPentagono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/btnLimpiarPentagono"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnRegresarPentagono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:layout_below="@id/textViewResultadoPentagono"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

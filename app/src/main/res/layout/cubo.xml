@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Cubo">
+
+    <EditText
+        android:id="@+id/editTextLadoCubo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitud del lado del cubo"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnCalcularCubo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_below="@id/editTextLadoCubo"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnLimpiarCubo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpiar"
+        android:layout_below="@id/btnCalcularCubo"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewResultadoCubo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/btnLimpiarCubo"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnRegresarCubo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:layout_below="@id/textViewResultadoCubo"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
